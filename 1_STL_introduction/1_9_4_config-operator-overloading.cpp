@@ -62,7 +62,9 @@ private:
 };
 
 ostream& operator<< (ostream& os, const INT& i) {
-    os << '[' << i.m_i << ']';
+    // os << '[' << i.m_i << ']';
+    os << '[' << i.m_i << ']' << endl;
+
     return os;
 }
 
@@ -73,4 +75,6 @@ int main() {
     cout << I--;
     cout << --I;
     cout << *I;
+
+    return 0;
 }
